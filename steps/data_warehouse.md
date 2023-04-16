@@ -2,7 +2,7 @@
 
 ## Development steps
 
-![](C:\Users\Pedrosa\Documents\Dev\cursos\Capstone-Project\imgs\dw_steps.png)
+![Development Steps](../imgs/dw_steps.png)
 
 ## Company Requirements
 
@@ -144,7 +144,7 @@ group by grouping sets(co.country,ca.categoryname)
 order by co.country, ca.categoryname
 ```
 
-### ![](C:\Users\Pedrosa\Documents\Dev\cursos\Capstone-Project\imgs\13-groupingsets.png)
+### ![](../imgs/13-groupingsets.png)
 
 ### Rollup
 
@@ -160,7 +160,7 @@ on f.iddate = d.iddate
 group by rollup(co.country,d.year);
 ```
 
-### ![](C:\Users\Pedrosa\Documents\Dev\cursos\Capstone-Project\imgs\14-rollup.png)
+### ![](../imgs/14-rollup.png)
 
 ### Cube
 
@@ -176,7 +176,7 @@ on f.iddate = d.iddate
 group by cube(co.country,d.year);
 ```
 
-## ![](C:\Users\Pedrosa\Documents\Dev\cursos\Capstone-Project\imgs\15-cube.png)
+## ![](../imgs/15-cube.png)
 
 ## MQT (Materialized Query Table)
 
