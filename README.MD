@@ -2,15 +2,17 @@
 
 > Author: Gabriel Pedrosa
 > 
-> Date: Under Development
+> Date: April 15, 2023
 > 
 > [IBM Data Engineering Professional Certificate](https://www.coursera.org/professional-certificates/ibm-data-engineer)
+> 
+> [Certification](https://www.credly.com/badges/f7013162-ee8d-437f-a742-8c4fdaccd76b)
 > 
 > Final project to achieve the IBM Data Engineering Professional Certificate
 
 ## Introduction
 
-The objective of this project is to develop a data platform for an e-commerce company called SoftCart, in which an end-to-end data pipeline will be developed, including the design and implementation of data architectures (RDBMS, NoSQL and Data Warehouse) , ETL processes, BI dashboards and Machine Learning models.
+The objective of this project is to develop a data platform for an e-commerce company called SoftCart, in which an end-to-end data pipeline will be developed, including the design and implementation of data architectures (RDBMS, NoSQL and Data Warehouse) , ETL processes, BI dashboards and Machine Learning models. All projects are independent of each other.
 
 ## Company Scenario
 
@@ -48,27 +50,20 @@ To move data between OLTP, NoSQL and the dataware house ETL pipelines are used a
 
 - Staging - Data warehouse – PostgreSQL
 
-- Big data platform - Hadoop
-
-- Big data analytics platform – Spark
-
 - Business Intelligence Dashboard - IBM Cognos Analytics
 
 - Data Pipelines - Apache Airflow
+
+- Machine Learning - Apache Spark
 
 ## Directories
 
 | Directory | Description                     |
 | --------- | ------------------------------- |
-| `sql/`   | SQL files                       |
+| `sql/`    | SQL files                       |
 | `steps/`  | Development steps documentation |
 | `imgs/`   | Images repository               |
-
-## Project Dependencies
-
-- MySQL 8.0.22 / phpMyAdmin 5.0.4
-- MongoDB 3.6.3 / mongoimport 100.3.1 / mongoexport 100.3.1
-- IBM Cloud DB2
+| `src/`    | Code repository                 |
 
 ## Environment Development Steps
 
@@ -78,3 +73,8 @@ To move data between OLTP, NoSQL and the dataware house ETL pipelines are used a
 
 3. [Design, Setup & Report Data Warehouse](./steps/data_warehouse.md)
 
+4. [Data Analytics](./steps/analytics_with_cognos.md)
+
+5. [ETL and Data Pipelines](./steps/etl_and_data_pipelines.md)
+
+6. [Spark ML](./src/Practise_Lab_-_Model_saving_and_loading%20(1).ipynb)

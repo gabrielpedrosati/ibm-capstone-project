@@ -1,4 +1,18 @@
-## Install `mongoimport` and `mongoexport` tools to move data in and out of the mongodb database
+## Objectives
+
+- Import data into a MongoDB database
+
+- Query data in a MongoDB database
+
+- Export data from MongoDB database
+
+## Project dependencies
+
+- MongoDB 3.6.3 / mongoimport 100.3.1 / mongoexport 100.3.1
+
+## Steps
+
+### Install `mongoimport` and `mongoexport` tools to move data in and out of the mongodb database
 
 ```shell
 wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu1804-x86_64-100.3.1.tgz
@@ -7,21 +21,21 @@ export PATH=$PATH:/home/project/mongodb-database-tools-ubuntu1804-x86_64-100.3.1
 echo "done"
 ```
 
-## Import `catalog.json` into mongo db named `catalog` and collection named `electronics`
+### Import `catalog.json` into mongo db named `catalog` and collection named `electronics`
 
 ```shell
 mongoimport -u root -p <password> --authenticationDatabase admin --db catalog --collection electronics --file catalog.json
 ```
 
-## MongoDB record
+### MongoDB record
 
 ![Record](../imgs/row_mongo.png)
 
-## Count number of rows
+### Count number of rows
 
 ![](../imgs/mongo_count.png)
 
-## Export fields `__id`,` type`,` model `into electronics.csv
+### Export fields `__id`,` type`,` model `into electronics.csv
 
 ```shell
 mongoexport -u root -p <password> --authenticationDatabase admin --db catalog --collection electronics --out electronics.csv --type=csv --fields _id,type,model
